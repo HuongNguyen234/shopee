@@ -18,8 +18,8 @@
     <div class="app">
         <div class="header">
             <div class="header__navbar">
-                <ul class="header__navbar-list">
-                    <li class="header__navbar-items header__navbar-items--separate"><a href="">Kênh người bán</a></li>
+                <ul class="header__navbar-list ">
+                    <li class="header__navbar-items header__navbar-items--separate header_hidden"><a href="">Kênh người bán</a></li>
                     <li class="header__navbar-items header__navbar-items--separate header-has-qr">Tải ứng dụng
                         <div class="header__qr-code">
                             <img src="../assets/img/d91264e165ed6facc6178994d5afae79.png" alt="QR-Code">
@@ -32,7 +32,7 @@
                         </div>
                     </li>
                     
-                    <li class="header__navbar-items header__navbar-items--no-pointer">Kết nối</li>
+                    <li class="header__navbar-items header__navbar-items--no-pointer header_hidden">Kết nối</li>
                     <li class="header__navbar-items padding-0">
                         <a href="#" class="header__navbar-items-connect">
                             <i class="fab fa-facebook"></i>
@@ -141,9 +141,8 @@
                         </form>
                     </div>
                 </div>
-
+                <span class="header__cart">
                 <div class="header__with-search-cart">
-                    <span class="header__cart">
                         <i class="fas fa-cart-plus"></i>
                         <span class="cart-notice">3</span>
                         <div class="header__cart-detail">
@@ -315,10 +314,13 @@
             <div class="grid">
                 <div class="grid__row">
                     <div class="grid__column-2">
+
                         <div class="category">
                             <div class="category-heading">
-                                <i class="category-heading-icon fas fa-list"></i>
-                                <h3>Danh Mục</h3>
+                                <button class="btn-menu"><i class="category-heading-icon fas fa-list"></i></button>
+                                <h3 class="category-title">Danh Mục</h3>
+                                
+                                
                             </div>
                             <div class="category-body">
                                 <ul class="category__list-items">
@@ -328,12 +330,16 @@
                                 </ul>
                             </div>
                         </div>
+                        <form id="content" class="hidden">
+                            <input type="text" name="input" class="input" id="search-input">
+                            <button type="reset" class="search" id="search-btn"></button>
+                        </form>
                     </div>
                     <div class="grid__column-10">
                         <div class="container__content">
                             <div class="home-filter">
                                 <div class="home-filter-lf">
-                                    <span>Sắp xếp theo</span>
+                                    <span class="home-filter-lf-title">Sắp xếp theo</span>
                                     <button class="btn ">Phổ biến</button>
                                     <button class="btn btn--primary">Mới nhất</button>
                                     <button class="btn">Bán chạy</button>
@@ -1239,57 +1245,46 @@
                                 </div>
                             </div>
                         </div>
-
-                        <ul class="pagination home-wap--pagination">
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="fas fa-chevron-left home-filter__paginate-icon"></i>
-                                </a>
-                            </li>
-
-                            <li class="pagination-item pagination-item--active">
-                                <a href="" class="pagination-item__link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                  3  
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    4
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    5
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    ...
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    14
-                                </a>
-                            </li>
-
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="fas fa-chevron-right home-filter__paginate-icon"></i>
-                                </a>
-                            </li>
-                        </ul>
-
+                       <div class="decive-page">
+                        <a href="" class="pagination-item__link">
+                            <i class="fas fa-chevron-left home-filter__paginate-icon"></i>
+                        </a>
+                        <div class="device-page-number">
+                            <ul class="pagination home-wap--pagination">
+                            
+                                <li class="pagination-item pagination-item--active">
+                                    <a href="" class="pagination-item__link">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                      3  
+                                    </a>
+                                </li>
+                                
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        14
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                        <a href="" class="pagination-item__link">
+                            <i class="fas fa-chevron-right home-filter__paginate-icon"></i>
+                        </a>
+                       </div>
                     </div>
                 </div>
                 
