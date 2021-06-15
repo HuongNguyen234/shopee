@@ -1420,13 +1420,15 @@
                             </div>
     
                             <div class="auth-form__group">
-                                <input class="form__group--input" type="password" placeholder="Nhập mật khẩu bạn"/>
+                                <input class="form__group--input" name="pass" type="password" placeholder="Nhập mật khẩu bạn"/>
                             </div>
     
                             <div class="auth-form__group">
-                                <input class="form__group--input" type="password" placeholder="Nhập lại mật khẩu của bạn"/>
+                                <input class="form__group--input" name="repass" type="password" placeholder="Nhập lại mật khẩu của bạn"/>
                             </div>
-    
+                            <div class="auth-form__group">
+                                <span class="warning-form"></span>
+                            </div>
                         </div>
     
                         <div class="auth-form-aside">
@@ -1443,8 +1445,8 @@
                         </div>
     
                         <div class="auth-form__control">
-                            <button class="btn">Trở lại</button>
-                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                            <button onclick="handleCancel()" class="btn">Trở lại</button>
+                            <button onclick="handleSubmitRegister('modal')" class="btn btn--primary">ĐĂNG KÝ</button>
                         </div>
                     </div>
                     <div class="auth-form__socials">
@@ -1485,12 +1487,14 @@
                             <div class="auth-form__group">
                                 <input class="form__group--input" type="password" placeholder="Mật khẩu"/>
                             </div>
-    
+                            <div class="auth-form__group">
+                                <span class="warning-form"></span>
+                            </div>
                         </div>
     
     
                         <div class="auth-form__control">
-                            <button class="btn btn--primary btn--login">ĐĂNG KÝ</button>
+                            <button onclick="handleSubmitLogin('modal-Login')"  class="btn btn--primary btn--login">ĐĂNG KÝ</button>
                         </div>
     
                         <div class="auth-form-help">

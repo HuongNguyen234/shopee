@@ -575,8 +575,9 @@ a{
 }
 
 .hiddens{
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
+    display: none;
 }
 
 .header__cart-detail>p{
@@ -1173,9 +1174,6 @@ a{
     display: none;
 }
 
-.hidden{
-    display: none;
-}
 
 .btn-menu{
     background-color: #fff;
@@ -1235,10 +1233,6 @@ a{
 
     .grid__row{
         display: flex;
-    }
-
-    .hidden{
-        display: block;
     }
 
     .category-body{
@@ -1449,4 +1443,9 @@ a{
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+.warning-form{
+    font-size: 14px;
+    color: red;
 }
